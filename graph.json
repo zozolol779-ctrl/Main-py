@@ -1,0 +1,61 @@
+{
+    "agents": {
+        "AGENT_BRAVO_LIVE_TEST": {
+            "id": "AGENT_BRAVO_LIVE_TEST",
+            "ip": "1.1.1.1",
+            "os": "Windows 11",
+            "status": "ACTIVE",
+            "user": "Victim",
+            "last_seen": "2026-01-14T20:33:39.980762"
+        },
+        "test_agent_hybrid": {
+            "ip": "10.0.0.99",
+            "os": "TestOS",
+            "user": "tester",
+            "status": "ACTIVE",
+            "recon": {},
+            "last_seen": "2026-01-15T14:18:21.754757"
+        },
+        "test_agent_full_flow": {
+            "id": "test_agent_full_flow",
+            "ip": "127.0.0.1",
+            "os": "TestOS",
+            "user": "testuser",
+            "status": "ACTIVE",
+            "recon": {
+                "os": "TestOS",
+                "user": "testuser"
+            },
+            "last_seen": "2026-01-16T07:14:39.063904"
+        }
+    },
+    "zombies": {},
+    "nodes": {},
+    "links": [
+        {
+            "source": "SHADOW_RELAY",
+            "target": "agent_AGENT_BRAVO_LIVE_TEST",
+            "type": "C2"
+        },
+        {
+            "source": "SHADOW_RELAY",
+            "target": "agent_test_agent_hybrid",
+            "type": "C2"
+        },
+        {
+            "source": "SHADOW_RELAY",
+            "target": "agent_test_agent_full_flow",
+            "type": "C2"
+        }
+    ],
+    "achievements": {
+        "FIRST_BLOOD": "2026-01-16T07:14:39.066499"
+    },
+    "agents_mesh": [
+        {
+            "source": "agent_A",
+            "target": "agent_B"
+        }
+    ],
+    "redirectors": {}
+}
