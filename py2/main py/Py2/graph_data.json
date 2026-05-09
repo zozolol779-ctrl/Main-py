@@ -1,0 +1,26 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "email",
+      "label": "mido77792@gmail.com",
+      "properties": {},
+      "id": "2de88a26-a939-4fa5-a8ac-03f111679243"
+    },
+    {
+      "type": "phone",
+      "label": "01122519503",
+      "properties": {},
+      "id": "ed28b838-b177-4f14-93e2-160904a8879d"
+    },
+    {
+      "type": "IP Address",
+      "label": "8.8.8.8",
+      "properties": {},
+      "id": "6426e101-cba5-4278-80f2-dd5bd3303e06"
+    }
+  ],
+  "edges": []
+}
